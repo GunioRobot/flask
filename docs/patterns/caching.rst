@@ -44,7 +44,7 @@ Using a Cache
 -------------
 
 Now how can one use such a cache?  There are two very important
-operations: :meth:`~werkzeug.contrib.cache.BaseCache.get` and 
+operations: :meth:`~werkzeug.contrib.cache.BaseCache.get` and
 :meth:`~werkzeug.contrib.cache.BaseCache.set`.  This is how to use them:
 
 To get an item from the cache call

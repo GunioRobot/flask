@@ -15,12 +15,12 @@ server and tools that power `FriendFeed`_.  Because it is non-blocking and
 uses epoll, it can handle thousands of simultaneous standing connections,
 which means it is ideal for real-time web services.  Integrating this
 service with Flask is a trivial task::
-    
+
     from tornado.wsgi import WSGIContainer
     from tornado.httpserver import HTTPServer
     from tornado.ioloop import IOLoop
     from yourapplication import app
-    
+
     http_server = HTTPServer(WSGIContainer(app))
     http_server.listen(5000)
     IOLoop.instance().start()

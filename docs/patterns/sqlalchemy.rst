@@ -42,7 +42,7 @@ Here the example `database.py` module for your application::
     engine = create_engine('sqlite:////tmp/test.db', convert_unicode=True)
     db_session = scoped_session(sessionmaker(autocommit=False,
                                              autoflush=False,
-                                             bind=engine)) 
+                                             bind=engine))
     Base = declarative_base()
     Base.query = db_session.query_property()
 
@@ -131,7 +131,7 @@ Here is an example `database.py` module for your application::
     metadata = MetaData()
     db_session = scoped_session(sessionmaker(autocommit=False,
                                              autoflush=False,
-                                             bind=engine)) 
+                                             bind=engine))
     def init_db():
         metadata.create_all(bind=engine)
 

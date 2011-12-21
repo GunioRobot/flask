@@ -178,7 +178,7 @@ Here's the contents of the `flaskext/sqlite3.py` for copy/paste::
     from flask import g
 
     class SQLite3(object):
-    
+
         def __init__(self, app):
             self.app = app
             self.app.config.setdefault('SQLITE3_DATABASE', ':memory:')

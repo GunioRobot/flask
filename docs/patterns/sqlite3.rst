@@ -74,7 +74,7 @@ a function that creates the database based on that schema.  This function
 can do that for you::
 
     from contextlib import closing
-    
+
     def init_db():
         with closing(connect_db()) as db:
             with app.open_resource('schema.sql') as f:
